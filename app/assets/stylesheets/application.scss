@@ -11,6 +11,32 @@
 // App
 @import "products";
 
+.navbar-nav li.login {
+  display: flex;
+  flex-direction: row;
+
+  a {
+    padding: 15px;
+    color: rgba(255, 255, 255, 0.55);
+    &:hover {
+      color: lightgray;
+    }
+    text-decoration: none;
+  }
+
+  p {
+    padding: 15px;
+    margin: 0;
+  }
+}
+
+a.nav-link {
+  color: rgba(255, 255, 255, 0.55);
+  &:hover {
+    color: lightgray;
+  }
+}
+
 // Fonts
 // Global
 body {
