@@ -33,7 +33,6 @@ RSpec.describe User, type: :model do
         email: "theDoctor@gmail.com",
         password: "Vroom",
         password_confirmation: "Vroom")
-
       expect(user2).to be_valid
     end
 
@@ -42,8 +41,7 @@ RSpec.describe User, type: :model do
         name: "Fabio Quartararo",
         email: "TeamYamaha@gmail.com",
         password: "12",
-        password_confirmation: "12"
-      )
+        password_confirmation: "12")
       expect(user).to_not be_valid
       expect(user.errors.full_messages).to include 'Password is too short (minimum is 3 characters)'
     end
@@ -54,8 +52,7 @@ RSpec.describe User, type: :model do
         name: "test",
         email: "test@example.com",
         password: "1234",
-        password_confirmation: "1234"
-      )
+        password_confirmation: "1234")
     authenticate = User.authenticate_with_credentials(user.email, user.password)
     expect(authenticate).to_not (be_nil)
     end
