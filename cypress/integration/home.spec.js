@@ -1,6 +1,6 @@
 describe("home.spec.js", () => {
   it("Should visit the homepage", () => {
-    cy.visit('/');
+    cy.visit('0.0.0.0:3000');
   });
 
   it("There is products on the page", () => {
