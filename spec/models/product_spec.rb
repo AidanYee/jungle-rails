@@ -55,7 +55,7 @@ RSpec.describe Product, type: :model do
         name: 'YZF-R1',
         price: nil,
         quantity: nil,
-        :category: nil
+        category: nil
       )
 
       expect(product).to_not be_valid
