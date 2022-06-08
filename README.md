@@ -2,7 +2,19 @@
 
 A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example.
 
+Users are able to create an account & make purchases.
+
+Admin users can add/remove plant categories & plants to the shop.
+
+## Screenshots
+
+![Homepage image](app/assets/images/homepage.png)
+
+![Homepage image](app/assets/images/products.png)
+
 ## Setup
+
+> NOTE: Make sure that your version of Rails is 6.1.5
 
 1. Run `bundle install` to install dependencies
 2. Create `config/database.yml` by copying `config/database.example.yml`
@@ -29,3 +41,5 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 - Bootstrap 5
 - PostgreSQL 9.x
 - Stripe
+- cypress
+- webpack
